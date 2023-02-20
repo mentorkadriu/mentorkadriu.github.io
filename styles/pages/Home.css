@@ -1,0 +1,101 @@
+
+
+.contain {
+  width: var(--width);
+  height: var(--height);
+  display: grid;
+    grid-template-columns: 23.6% 5.58% 9.02% 61.8%;
+    grid-template-rows: 23.6% 5.58% 9.02% 61.8%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+
+.div1 { grid-area: 1 / 4 / 5 / 5; }
+.div2 { grid-area: 4 / 1 / 5 / 4; }
+.div3 { grid-area: 1 / 1 / 4 / 2; }
+.div4 { grid-area: 1 / 2 / 2 / 4; }
+.div5 { grid-area: 2 / 3 / 4 / 4; }
+.div6 { grid-area: 3 / 2 / 4 / 3; }
+.div7 { grid-area: 2 / 2 / 3 / 3; }
+
+.container-squares {
+    @apply relative;
+    max-width: calc(100% - 46px);
+    @screen md {
+        max-width: calc(768px / var(--phi));
+    }
+    @screen lg {
+        height: var(--height);
+        width: var(--width);
+        max-width: calc(100vw / var(--phi));
+    }
+}
+
+div[class^=square] {
+    content: "";
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    border-image: var(--border-image) 3 stretch;
+    @screen lg {
+        height: 55px;
+        width: 55px;
+        border-image: var(--border-image) 8 stretch;
+    }
+}
+
+.square {
+    &-top {
+        &-left {
+            top: -23px;
+            left: -23px;
+            border-right: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            @screen lg {
+                top: -55px;
+                left: -55px;
+                border-right: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+            }
+        }
+        &-right {
+            top: -23px;
+            right: -23px;
+            border-left: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            @screen lg {
+                top: -55px;
+                right: -55px;
+                border-left: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+            }
+        }
+    }
+    &-bottom {
+        &-left {
+            bottom: -23px;
+            left: -23px;
+            border-top: 5px solid transparent;
+            border-right: 5px solid transparent;
+            @screen lg {
+                bottom: -55px;
+                left: -55px;
+                border-top: 10px solid transparent;
+                border-right: 10px solid transparent;
+            }
+        }
+        &-right {
+            bottom: -23px;
+            right: -23px;
+            border-top: 5px solid transparent;
+            border-left: 5px solid transparent;
+            @screen lg {
+                bottom: -55px;
+                right: -55px;
+                border-top: 10px solid transparent;
+                border-left: 10px solid transparent;
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@layer base {
+    :root {
+        --width: calc(100vw / 1.618);
+        --height: calc(var(--width) / 1.618);
+        --border: 0.5px solid #4A4949;
+        --mk-bg-primary: rgba(21, 21, 21, 0.5);
+        --color-text-base: #FFFFFF;
+        --color-bg-base: 10, 30, 63;
+        --border-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23E4E4E473' stroke-width='1' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+        --background-image-h: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:100%25;height:100%25;'%3E%3Cline x1='0' y1='0%25' x2='100%25' y2='1%25' style='stroke: %23e4e4e4;stroke-width: 1;stroke-dasharray:5 4'%3E%3C/line%3E%3C/svg%3E");
+        --background-image-v: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:100%25;height:100%25;'%3E%3Cline x1='0' y1='0%25' x2='0%25' y2='100%25' style='stroke:%23E4E4E473;stroke-width: 1;stroke-dasharray:6 14'%3E%3C/line%3E%3C/svg%3E");
+        --phi: 1.618;
+    }
+}

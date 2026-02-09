@@ -24,7 +24,7 @@
     "remark-html": "^15.0.1",
     "remark-parse": "^10.0.1",
     "remark-rehype": "^11.1.2",
-    "unified": "^10.1.2"
+    "unified": "^11.0.5"
   },
   "devDependencies": {
     "@types/node": "^25.2.0",

@@ -6,11 +6,10 @@ export default function Profile() {
   return (
     <CvSection title="Profile">
       <p>
-        Nearing first decade into programming, loving it everyday <i className={"text-sm"}>(with ups and downs)</i>.
-        <br/>Started building webpages with HTML, CSS and JavaScript, and now that environment has expanded beyond my imagination.
-        Now I use nodejs, graphql, vue, react, nuxt, next, strapi, tailwindcss, scss, bem, webpack, rollup, etc, etc.
-        Yet again principles are the same: write performant, maintainable and scalable code, help your future self and others.
-        &nbsp;Nowadays I&apos;m focused more on Javascript and Typescript with aim to write functional programing.
+        10 years building production-grade web applications — from landing pages to complex SaaS platforms.
+        Specialised in React, TypeScript, and modern frontend architecture.
+        I care about performant, maintainable, and accessible code that scales.
+        Currently focused on design systems, SSR patterns, and PWA development.
       </p>
     </CvSection>
   )

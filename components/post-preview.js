@@ -13,8 +13,8 @@ export default function PostPreview({
       {image && (<div className={"bg-black"}><Image src={image} alt={title} width={320} height={200} layout={"responsive"} className={"grayscale"}/></div>)}
       <div className="text-sm mb-2 p-4">
         <h3 className="mb-3 text-3xl font-semibold">
-          <Link href={`${slug}`}>
-            <a className={"no-underline hover:underline"}>{title}</a>
+          <Link href={`${slug}`} className={"no-underline hover:underline"}>
+            {title}
           </Link>
         </h3>
         <DateFormatter dateString={date} />

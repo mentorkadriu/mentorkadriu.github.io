@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 interface IJobExperience extends React.HTMLAttributes<HTMLElement>{
@@ -15,7 +16,7 @@ export default function JobExperience({title, company, period, description, ...r
     <div className={"mt-4"} {...rest}>
       <h4 className={"font-semibold mb-2"}>{title}</h4>
       <div className={"flex justify-between mb-2"}>
-        <a className={"decoration-0 text-neutral-500"} href={link || ""} target="_blank" rel="noreferrer">{name}</a>
+        <Link className={"decoration-0 text-neutral-500"} href={link || ""} target="_blank" rel="noreferrer">{name}</Link>
         <span className={"text-neutral-400"}>{period}</span>
       </div>
       <p>{description}</p>

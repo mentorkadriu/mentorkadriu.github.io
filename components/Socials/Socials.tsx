@@ -11,10 +11,12 @@ export default function Socials() {
         <a href="https://www.linkedin.com/in/mentor-kadriu-2a85a512b/"  className={"no-underline flex"} target={"_blank"} rel="noreferrer" ><Image src={linkedin} width={30} height={30} alt={"linkedin"}/></a>
       </li>
       <li>
-        <a href="https://github.com/mentorkadriu" className={"no-underline flex"}><Image src={github} width={30} height={30} alt={"github"} /></a>
+        <a href="https://github.com/mentorkadriu" className={"no-underline flex"} target="_blank" rel="noreferrer"><Image src={github} width={30} height={30} alt={"github"} /></a>
       </li>
       <li>
-        <a href="mailto:mentorkadriu@gmail.com" className={"no-underline inline-block rounded-full bg-black h-[25px] w-[25px] flex justify-center items-center"}><Image src={email} width={15} height={15} alt={"email"} /> </a>
+        <a href="mailto:mentorkadriu@gmail.com" className={"no-underline inline-block rounded-full border border-neutral-400 h-[28px] w-[28px] flex justify-center items-center hover:border-black hover:bg-black transition-colors group"}>
+          <Image src={email} width={15} height={15} alt={"email"} className="group-hover:invert transition-all" />
+        </a>
       </li>
     </ul>
   )

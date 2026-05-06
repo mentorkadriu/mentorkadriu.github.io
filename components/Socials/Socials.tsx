@@ -15,7 +15,7 @@ export default function Socials() {
       </li>
       <li>
         <a href="mailto:mentorkadriu@gmail.com" className={"no-underline inline-block rounded-full border border-neutral-400 h-[28px] w-[28px] flex justify-center items-center hover:border-black hover:bg-black transition-colors group"}>
-          <Image src={email} width={15} height={15} alt={"email"} className="group-hover:invert transition-all" />
+          <Image src={email} width={15} height={15} alt={"email"} className="brightness-0 group-hover:invert transition-all" />
         </a>
       </li>
     </ul>
